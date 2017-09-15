@@ -30,16 +30,22 @@ The script will output 6 graphs as pdf files. PC1/PC2 scatter plot with no color
 
 Here are the examples of the outputs for the gene and mastertable used in a previous example:
 
+PC1/PC2 no colors:
 ![alt text](https://github.com/milospjanic/SingleCellPCAplot/blob/master/pca_nocol.1.2.png)
 
+PC1/PC2 in a 3 scale red gradient colors:
 ![alt text](https://github.com/milospjanic/SingleCellPCAplot/blob/master/pca.3col.1.2.png)
 
+PC1/PC2 in a 10 scale red gradient colors:
 ![alt text](https://github.com/milospjanic/SingleCellPCAplot/blob/master/pca.10col.1.2.png)
 
+PC2/PC3 no colors:
 ![alt text](https://github.com/milospjanic/SingleCellPCAplot/blob/master/pca_nocol.2.3.png)
 
+PC2/PC3 in a 3 scale red gradient colors:
 ![alt text](https://github.com/milospjanic/SingleCellPCAplot/blob/master/pca.3col.2.3.png)
 
+PC2/PC3 in a 10 scale red gradient colors:
 ![alt text](https://github.com/milospjanic/SingleCellPCAplot/blob/master/pca.10col.2.3.png)
 
 </pre>
