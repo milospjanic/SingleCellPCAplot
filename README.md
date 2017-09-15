@@ -24,6 +24,8 @@ wget https://raw.githubusercontent.com/milospjanic/SingleCellPCAplot/master/Sing
 chmod 755 SingleCellPCAplot.sh
 ./SingleCellPCAplot.sh mastertable.txt Tcf21
 
+</pre>
+
 The script will output 6 graphs as pdf files. PC1/PC2 scatter plot with no color, colored for the gene of interest in a 3 scale gradient, colored for the gene of interest in a 10 scale gradient, and PC2/PC3 scatter plot with no color, colored for the gene of interest in a 3 scale gradient, colored for the gene of interest in a 10 scale gradient.
 
 Here are the examples of the outputs for the gene and mastertable used in a previous example:
