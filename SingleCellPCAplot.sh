@@ -19,14 +19,14 @@ pca= prcomp( x1 , center=T, scale=T)
 #plot simple pca 1/2
 
 pdf(\"pca_nocol.1.2.pdf\")
-plot(pca\$rotation[,1],pca\$rotation[,2], xlab = \"PC1\", ylab = \"PC2\")
+plot(pca\$rotation[,1],pca\$rotation[,2], xlab = \"PC1\", ylab = \"PC2\", main=\"PCA plot : PC1/PC2\")
 text(pca\$rotation[,1],pca\$rotation[,2], row.names(pca\$rotation), cex=0.2, pos=4)
 dev.off()
 
 #plot simple pca 2/3
 
 pdf(\"pca_nocol.2.3.pdf\")
-plot(pca\$rotation[,2],pca\$rotation[,3], xlab = \"PC2\", ylab = \"PC3\")
+plot(pca\$rotation[,2],pca\$rotation[,3], xlab = \"PC2\", ylab = \"PC3\", main=\"PCA plot : PC2/PC3\")
 text(pca\$rotation[,2],pca\$rotation[,3], row.names(pca\$rotation), cex=0.2, pos=4)
 dev.off()
 
@@ -49,14 +49,14 @@ x3\$color[x3\$value<(range(x3\$value)[2]/3)*3 & x3\$value>(range(x3\$value)[2]/3
 #plot pca 1/2 with 3 colors in a gradient
 
 pdf(\"pca.3col.1.2.pdf\")
-plot(pca\$rotation[,1],pca\$rotation[,2], col=x3\$color, xlab = \"PC1\", ylab = \"PC2\", pch=19)
+plot(pca\$rotation[,1],pca\$rotation[,2], col=x3\$color, xlab = \"PC1\", ylab = \"PC2\", pch=19, main=\"PCA plot : PC1/PC2. Coloring scale: $second expression\")
 text(pca\$rotation[,1],pca\$rotation[,2], row.names(pca\$rotation), cex=0.2, pos=4)
 dev.off()
 
 #plot pca 2/3 with 3 colors in a gradient
 
 pdf(\"pca.3col.2.3.pdf\")
-plot(pca\$rotation[,2],pca\$rotation[,3], col=x3\$color, xlab = \"PC2\", ylab = \"PC3\", pch=19)
+plot(pca\$rotation[,2],pca\$rotation[,3], col=x3\$color, xlab = \"PC2\", ylab = \"PC3\", pch=19, main=\"PCA plot : PC2/PC3. Coloring scale: $second expression\")
 text(pca\$rotation[,2],pca\$rotation[,3], row.names(pca\$rotation), cex=0.2, pos=4)
 dev.off()
 
@@ -76,14 +76,14 @@ x3\$color[x3\$value<(range(x3\$value)[2]/10)*10 & x3\$value>(range(x3\$value)[2]
 #plot pca 1/2 with 10 colors in a gradient
 
 pdf(\"pca.10col.1.2.pdf\")
-plot(pca\$rotation[,1],pca\$rotation[,2], col=x3\$color, xlab = \"PC1\", ylab = \"PC2\", pch=19)
+plot(pca\$rotation[,1],pca\$rotation[,2], col=x3\$color, xlab = \"PC1\", ylab = \"PC2\", pch=19, main=\"PCA plot : PC1/PC2. Coloring scale: $second expression\")
 text(pca\$rotation[,1],pca\$rotation[,2], row.names(pca\$rotation), cex=0.2, pos=4)
 dev.off()
 
 #plot pca 2/3 with 10 colors in a gradient
 
 pdf(\"pca.10col.2.3.pdf\")
-plot(pca\$rotation[,2],pca\$rotation[,3], col=x3\$color, xlab = \"PC2\", ylab = \"PC3\", pch=19)
+plot(pca\$rotation[,2],pca\$rotation[,3], col=x3\$color, xlab = \"PC2\", ylab = \"PC3\", pch=19, main=\"PCA plot : PC2/PC3. Coloring scale: $second expression\")
 text(pca\$rotation[,2],pca\$rotation[,3], row.names(pca\$rotation), cex=0.2, pos=4)
 dev.off()
 
