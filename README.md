@@ -19,9 +19,11 @@ Example run:
 
 <pre>
 
-wget 
+ 
 wget https://raw.githubusercontent.com/milospjanic/SingleCellPCAplot/master/SingleCellPCAplot.sh
+
 chmod 755 SingleCellPCAplot.sh
+
 ./SingleCellPCAplot.sh mastertable.txt Tcf21
 
 </pre>
